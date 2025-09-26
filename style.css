@@ -1,0 +1,278 @@
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    
+    body {
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #000000;
+    }
+
+    header {
+        background: #ffffff;
+        color: #000000;
+        padding: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header {
+        font-size: 20px;
+    }
+
+    header nav {
+        font-size: 25px;
+    }
+
+    nav a {
+        color: #000000;
+        margin-left: 25px;
+        text-decoration: none;
+    }
+
+    .topo {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 20px;
+        align-items: center;
+    }
+
+    .texto-topo {
+        flex: 1;
+    }
+
+    .texto-topo h2 {
+        margin-bottom: 10px;
+    }
+
+    .video-caixa {
+        flex: 1;
+        background: #000;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .video-caixa video {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    .cartoes {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .cartao {
+        flex: 1 1 200px;
+        background: #f1f1f1;
+        padding: 15px;
+        border-radius: 8px;
+    }
+
+    .sites {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        width: 50%;
+        max-width: 50%;
+    }
+
+    .site {
+        flex: 1 1 200px;
+        background: #fafafa;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        display: grid;
+    }
+
+    footer {
+        background: #000000;
+        color: #fff;
+        text-align: center;
+        padding: 15px;
+        margin-top: 20px;
+    }
+
+    form input,
+    form button {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        font-size: large;
+    }
+
+    form button {
+        background: #ED1C24;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+
+.titulo-faixa {
+    position: relative;
+    padding-left: 15px;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.titulo-faixa::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 5px;
+    background: #ED1C24;
+}
+
+.site-img {
+    width: 35%;
+    max-width: 35%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+/* Botão */
+.botao-site {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 8px 12px;
+    background: #ED1C24;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.botao-site:hover {
+    background: #b31318;
+}
+
+/* Animações suaves */
+.cartao, .site, .texto-topo, .video-caixa {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+}
+
+.aparecer {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+/* Telas até 1024px (tablet e notebooks menores) */
+@media (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+        padding: 20px;
+    }
+
+    header nav {
+        font-size: 20px;
+    }
+
+    nav a {
+        margin: 0 10px;
+    }
+
+    .topo {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sites {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .site-img {
+        width: 60%;
+        max-width: 300px;
+        margin: 0 auto 10px auto;
+    }
+}
+
+/* Telas até 768px (celulares grandes) */
+@media (max-width: 768px) {
+    header {
+        padding: 15px;
+    }
+
+    header img {
+        max-width: 150px;
+    }
+
+    header nav {
+        font-size: 18px;
+    }
+
+    .cartoes {
+        flex-direction: column;
+    }
+
+    .cartao {
+        flex: 1 1 100%;
+    }
+
+    .sites {
+        flex-direction: column;
+    }
+
+    .site {
+        text-align: center;
+    }
+
+    .site-img {
+        width: 80%;
+        max-width: 250px;
+    }
+}
+
+/* Telas até 480px (celulares pequenos) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 22px;
+    }
+
+    h2, .titulo-faixa {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+        font-size: 16px;
+    }
+
+    form input, form button {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    .botao-site {
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+}

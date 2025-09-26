@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Projetos Educação Paulista</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <a href="#">
+            <img src="./imagens/Governo do Estado de SP.png" alt="SP-logo">
+        </a>
+        <nav>
+            <a href="#sobre">Sobre</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#contato">Contato</a>
+        </nav>
+        <a href="#">
+            <img src="./imagens/logo-gov.png" alt="SP-logo">
+        </a>
+    </header>
+
+    <main>
+        <section class="topo">
+            <div class="texto-topo">
+                <h1>Bem-vindo ao Projetos Educação Profissional Paulista</h1>
+                <h3>Este site funciona como um alocador de projetos da educação profissional paulista, com o objetivo de
+                    registrar e preservar as iniciativas mais criativas e inovadoras dos alunos.</h3>
+            </div>
+            <div class="video-caixa">
+                <video autoplay muted loop playsinline>
+                    <source src="./arquivos/ODS_4_Educação_de_Qualidade.mp4" type="video/mp4">
+                    <source src="./arquivos/ODS_4_Educação_de_Qualidade.webm" type="video/webm">
+                    Seu navegador não suporta vídeo.
+                </video>
+
+            </div>
+        </section>
+
+        <section id="sobre">
+            <h1>Sobre</h1>
+            <h3>Este evento tem como objetivo reunir jovens interessados em compartilhar seus projetos com a Secretaria
+                da Educação, com um foco específico em Educação Profissional. É um site dedicado especialmente aos
+                alunos do Curso Técnico de Desenvolvimento de Sistemas de diversas escolas do Estado de São Paulo</h3>
+        </section>
+
+        <section>
+            <h2>Por que participar?</h2>
+            <div class="cartoes">
+                <div class="cartao">
+                    <h3>Conteúdo inovaodor</h3>
+                    <p>Aprenda de forma prática e rápida pelos app, site, games, criados pelos alunos.</p>
+                </div>
+                <div class="cartao">
+                    <h3>Fazer contatos</h3>
+                    <p>Conheça novas sites e companheiros de Curso.</p>
+                </div>
+                <div class="cartao">
+                    <h3>Novidades</h3>
+                    <p>Fique por dentro das últimas tendências. Os projetos mais bem avaliados.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projetos">
+            <h2 class="titulo-faixa">Projetos</h2>
+            <div class="sites">
+                <div class="site">
+                    <strong>Giocando</strong>
+                    <img src="./imagens/giocando.png" alt="Imagem Projeto 1" class="site-img">
+                    <p>Site com diversas plataformas de games, com intuito de ensinar de forma prática e divertida.</p>
+                    <a href="./projetos.html" class="botao-site">Mostrar mais</a>
+                </div>
+                <div class="site">
+                     <strong>Por vir...</strong>
+                    <img src="./imagens/future.jpg" alt="Imagem Projeto 2" class="site-img">
+                    <p>Novos Projetos no Futuro</p>
+                    <a href="./projetos.html" class="botao-site">Mostrar mais</a>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="contato">
+            <h2>Inscreva seu projeto</h2>
+            <form>
+                <input type="text" placeholder="Nome do seu grupo">
+                <input type="email" placeholder="E-mail de um representante">
+                <input type="link" placeholder="Link do seu projeto">
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© <span id="ano"></span> Denilson Ferreira Pimentel com Educação Profissional Paulista. Todos os direitos
+            reservados.</p>
+    </footer>
+
+    <script>
+        document.getElementById('ano').textContent = new Date().getFullYear();
+
+        const elementos = document.querySelectorAll('.cartao, .site, .texto-topo, .video-caixa');
+
+    const observar = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('aparecer');
+            }
+        });
+    }, { threshold: 0.2 });
+
+    elementos.forEach(el => observar.observe(el));
+    </script>
+</body>
+
+</html>
