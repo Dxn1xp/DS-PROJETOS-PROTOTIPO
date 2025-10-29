@@ -3,118 +3,168 @@
 
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Projetos Educação Paulista</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>ExpoEducatec 2025</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <header>
-        <a href="#">
-            <img src="./imagens/Governo do Estado de SP.png" alt="SP-logo">
-        </a>
-        <nav>
-            <a href="#sobre">Sobre</a>
-            <a href="#projetos">Projetos</a>
-            <a href="#contato">Contato</a>
-        </nav>
-        <a href="#">
-            <img src="./imagens/logo-gov.png" alt="SP-logo">
-        </a>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-inner">
+            <div class="logo-left">
+                <!-- COLE A LOGO DA ESQUERDA AQUI: assets/logo-left.png -->
+                <img src="imagens/EXPOEDUCATEC-removebg-preview.png" alt="Logo esquerda" class="logo-img" />
+            </div>
+
+            <button class="nav-toggle" aria-label="Abrir menu">☰</button>
+
+            <ul class="nav-links">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+
+            <div class="logo-right">
+                <button class="btn">
+                    <a href="">Inscreva-se</a>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO / VIDEO BACKGROUND -->
+    <header id="home" class="hero">
+        <!-- Coloque seu vídeo em assets/video-bg.mp4 -->
+        <video class="hero-video" autoplay muted loop playsinline>
+            <source src="arquivos/EXPO.mp4" type="video/mp4" />
+            <!-- fallback image caso o browser não toque o vídeo -->
+            <img src="assets/hero-fallback.jpg" alt="Background" />
+        </video>
+
+
+        <div class="hero-overlay">
+            <h1 class="hero-title">II Congresso do Ensino Profissionalizante</h1>
+            <p>28/11 • 10:00 às 15:00</p>
+
+            <h2 class="hero-sub">Local</h2>
+            <h1>E.E. Conselheiro Crispiniano</h1>
+            <p>R. Arminda de Lima, 57 - Vila Progresso, Guarulhos - SP, 07095-010</p>
+            <a href="#sobre" class="btn">Saiba mais</a>
+            <a href="#sobre" class="btn">Ver Programação</a>
+        </div>
+
     </header>
 
-    <main>
-        <section class="topo">
-            <div class="texto-topo">
-                <h1>Bem-vindo ao Projetos Educação Profissional Paulista</h1>
-                <h3>Este site funciona como um alocador de projetos da educação profissional paulista, com o objetivo de
-                    registrar e preservar as iniciativas mais criativas e inovadoras dos alunos.</h3>
+
+    <div class="congresso-aprovado">
+        <h2>UM CONGRESSO APROVADO POR QUEM MAIS IMPORTA: OS ESTUDANTES!</h2>
+        <p>Esses resultados refletem a experiência dos participantes da 1ª edição do Congresso de Educação Profissional.
+            Um evento feito para inspirar, conectar e transformar o futuro da aprendizagem técnica.</p>
+        <div class="resultados">
+            <div class="resultado">
+                <strong>96,8%</strong>
+                <p>Sentiram-se motivados a continuar os estudos</p>
             </div>
-            <div class="video-caixa">
-                <video autoplay muted loop playsinline>
-                    <source src="./arquivos/ODS_4_Educação_de_Qualidade.mp4" type="video/mp4">
-                    <source src="./arquivos/ODS_4_Educação_de_Qualidade.webm" type="video/webm">
-                    Seu navegador não suporta vídeo.
-                </video>
-
+            <div class="resultado">
+                <strong>94,5%</strong>
+                <p>Avaliaram as apresentações como práticas e dinâmicas</p>
             </div>
-        </section>
+            <div class="resultado">
+                <strong>92%</strong>
+                <p>Destaque na troca com colegas e professores</p>
+            </div>
+            <div class="resultado">
+                <strong>89,7%</strong>
+                <p>Disseram que voltariam na próxima edição</p>
+            </div>
+        </div>
+    </div>
 
-        <section id="sobre">
-            <h1>Sobre</h1>
-            <h3>Este evento tem como objetivo reunir jovens interessados em compartilhar seus projetos com a Secretaria
-                da Educação, com um foco específico em Educação Profissional. É um site dedicado especialmente aos
-                alunos do Curso Técnico de Desenvolvimento de Sistemas de diversas escolas do Estado de São Paulo</h3>
-        </section>
+    <!-- SOBRE -->
+    <section id="sobre" class="section about">
+        <div class="container">
+            <h2>Sobre o ExpoEducatec</h2>
+            <p>O II Congresso do Ensino Profissionalizante é uma iniciativa da Unidade Regional de Ensino Guarulhos Sul,
+                com apoio da Secretaria de Educação do Estado de São Paulo, e tem como propósito valorizar o
+                protagonismo dos estudantes e a integração entre escola e comunidade.
 
-        <section>
-            <h2>Por que participar?</h2>
-            <div class="cartoes">
-                <div class="cartao">
-                    <h3>Conteúdo inovaodor</h3>
-                    <p>Aprenda de forma prática e rápida pelos app, site, games, criados pelos alunos.</p>
+                Esta é a segunda edição do evento, que pretende ocorrer anualmente, consolidando-se como um espaço de
+                referência para a apresentação de projetos inovadores e soluções práticas desenvolvidas pelos estudantes
+                dos cursos técnicos.
+
+                Durante o congresso, 83 projetos serão apresentados, demonstrando a aplicação prática dos conhecimentos
+                adquiridos e o potencial de inovação presente nas escolas públicas.
+
+                O evento também funciona como um espaço de networking, onde empresários, docentes universitários e
+                representantes da SEDUC podem conhecer de perto as soluções criativas dos estudantes e dialogar sobre o
+                futuro da educação profissional.</p>
+
+        </div>
+        <div class="programacao-evento">
+            <h2>Programação do Evento</h2>
+            <ul>
+                <li><strong>10:00</strong> - Abertura Oficial do Evento<br>Cerimônia de abertura com autoridades</li>
+                <li><strong>10:30</strong> - Início das Apresentações<br>Estudantes começam a apresentar seus projetos
+                </li>
+                <li><strong>12:00</strong> - Intervalo<br>Pausa para almoço e networking</li>
+                <li><strong>13:00</strong> - Continuação das Apresentações<br>Segunda rodada de apresentações</li>
+                <li><strong>14:00</strong> - Palestra: Futuro da Educação Profissional<br>Palestrante convidado</li>
+                <li><strong>15:00</strong> - Encerramento e Agradecimentos<br>Palestras finais e premiações</li>
+                <li><strong>16:00</strong> - Encerramento do Evento<br>Fim oficial do Congresso</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- GALERIA -->
+    <section id="galeria" class="section gallery">
+        <div class="container">
+            <h2>Galeria</h2>
+            <p>Minhas fotos — clique para ampliar.</p>
+
+            <div class="gallery-grid">
+                <!-- Repita os itens e troque os nomes dos arquivos -->
+                <div class="gallery-item">
+                    <img src="imagens/foto (1).jpg" alt="Foto 1" />
                 </div>
-                <div class="cartao">
-                    <h3>Fazer contatos</h3>
-                    <p>Conheça novas sites e companheiros de Curso.</p>
+                <div class="gallery-item">
+                    <img src="imagens/foto (2).jpg" alt="Foto 2" />
                 </div>
-                <div class="cartao">
-                    <h3>Novidades</h3>
-                    <p>Fique por dentro das últimas tendências. Os projetos mais bem avaliados.</p>
+                <div class="gallery-item">
+                    <img src="imagens/foto (3).jpg" alt="Foto 3" />
+                </div>
+                <div class="gallery-item">
+                    <img src="imagens/inicio.jpg" alt="Foto 4" />
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="projetos">
-            <h2 class="titulo-faixa">Projetos</h2>
-            <div class="sites">
-                <div class="site">
-                    <strong>Giocando</strong>
-                    <img src="./imagens/giocando.png" alt="Imagem Projeto 1" class="site-img">
-                    <p>Site com diversas plataformas de games, com intuito de ensinar de forma prática e divertida.</p>
-                    <a href="./projetos.html" class="botao-site">Mostrar mais</a>
-                </div>
-                <div class="site">
-                     <strong>Por vir...</strong>
-                    <img src="./imagens/future.jpg" alt="Imagem Projeto 2" class="site-img">
-                    <p>Novos Projetos no Futuro</p>
-                    <a href="./projetos.html" class="botao-site">Mostrar mais</a>
-                </div>
+    <!-- LIGHTBOX (oculto por padrão) -->
+    <div id="lightbox" class="lightbox" aria-hidden="true">
+        <button class="lightbox-close" aria-label="Fechar">✕</button>
+        <img class="lightbox-img" src="" alt="Ampliação" />
+    </div>
+
+    <!-- CONTATO / FOOTER -->
+    <footer id="contato" class="footer section">
+        <div class="container">
+            <h2>Conecte-se conosco</h2>
+            <div class="social-links">
+                <a href="#"><img src="imagens/icons8-instagram-100.png" alt="Instagram"></a>
+                <a href="#"><img src="imagens/icons8-x-100.png" alt="X"></a>
+                <a href="#"><img src="imagens/icons8-youtube-100.png" alt="YouTube"></a>
+                <a href="#"><img src="imagens/icons8-linkedin-100.png" alt="LinkedIn"></a>
             </div>
-        </section>
-
-
-        <section id="contato">
-            <h2>Inscreva seu projeto</h2>
-            <form>
-                <input type="text" placeholder="Nome do seu grupo">
-                <input type="email" placeholder="E-mail de um representante">
-                <input type="link" placeholder="Link do seu projeto">
-                <button type="submit">Enviar</button>
-            </form>
-        </section>
-    </main>
-
-    <footer>
-        <p>© <span id="ano"></span> Denilson Ferreira Pimentel com Educação Profissional Paulista. Todos os direitos
-            reservados.</p>
+            <p class="copyright">© <span id="ano"></span> 2025 II Congresso do Ensino Profissionalizante – Unidade
+                Regional de Ensino Guarulhos Sul.<br>Apoio: Secretaria de Educação do Estado de São Paulo | E.E.
+                Conselheiro Crispiniano</p>
+        </div>
     </footer>
 
-    <script>
-        document.getElementById('ano').textContent = new Date().getFullYear();
-
-        const elementos = document.querySelectorAll('.cartao, .site, .texto-topo, .video-caixa');
-
-    const observar = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('aparecer');
-            }
-        });
-    }, { threshold: 0.2 });
-
-    elementos.forEach(el => observar.observe(el));
-    </script>
+    <script src="scripts.js"></script>
 </body>
 
 </html>
