@@ -2,169 +2,197 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>ExpoEducatec 2025</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ExpoEducatec 2025</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-    <!-- NAVBAR -->
-    <nav class="navbar">
-        <div class="nav-inner">
-            <div class="logo-left">
-                <!-- COLE A LOGO DA ESQUERDA AQUI: assets/logo-left.png -->
-                <img src="imagens/EXPOEDUCATEC-removebg-preview.png" alt="Logo esquerda" class="logo-img" />
-            </div>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-inner container">
+      <div class="logo-left">
+        <!-- COLE A LOGO DA ESQUERDA AQUI: assets/logo-left.png -->
+        <img src="imagens/EXPOEDUCATEC-removebg-preview.png" alt="Logo esquerda" class="logo-img" />
+      </div>
 
-            <button class="nav-toggle" aria-label="Abrir menu">☰</button>
+      <button class="nav-toggle" aria-label="Abrir menu">☰</button>
 
-            <ul class="nav-links">
-                <li><a href="#home">Início</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#galeria">Galeria</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
+      <ul class="nav-links" id="navLinks" aria-hidden="true">
+        <li><a href="#home">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
 
-            <div class="logo-right">
-                <button class="btn">
-                    <a href="">Inscreva-se</a>
-                </button>
-            </div>
+      <div class="logo-right">
+        <!-- CTA estilizada (botão) -->
+        <a href="" class="cta-btn">Inscreva-se</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO / VIDEO BACKGROUND -->
+  <header id="home" class="hero">
+    <!-- Coloque seu vídeo em assets/video-bg.mp4 -->
+    <video class="hero-video" autoplay muted loop playsinline>
+      <source src="arquivos/EXPO.mp4" type="video/mp4" />
+      <!-- fallback image caso o browser não toque o vídeo -->
+      <img src="assets/hero-fallback.jpg" alt="Background" />
+    </video>
+
+    <!-- OVERLAY DO VÍDEO: leve fundo preto somente atrás do texto -->
+    <div class="hero-overlay">
+      <div class="hero-text">
+        <h1 class="hero-title">II Congresso do Ensino Profissionalizante</h1>
+        <p class="hero-date">28/11 • 10:00 às 15:00</p>
+
+        <h2 class="hero-sub">Local</h2>
+        <p class="hero-location">E.E. Conselheiro Crispiniano</p>
+        <p class="hero-address">R. Arminda de Lima, 57 - Vila Progresso, Guarulhos - SP, 07095-010</p>
+
+        <div class="hero-actions">
+          <a href="#contato" class="btn">Vídeos</a>
+          <a href="#sobre" class="btn">Ver Programação</a>
         </div>
-    </nav>
+      </div>
+    </div>
+  </header>
 
-    <!-- HERO / VIDEO BACKGROUND -->
-    <header id="home" class="hero">
-        <!-- Coloque seu vídeo em assets/video-bg.mp4 -->
-        <video class="hero-video" autoplay muted loop playsinline>
-            <source src="arquivos/EXPO.mp4" type="video/mp4" />
-            <!-- fallback image caso o browser não toque o vídeo -->
-            <img src="assets/hero-fallback.jpg" alt="Background" />
-        </video>
-
-
-        <div class="hero-overlay">
-            <h1 class="hero-title">II Congresso do Ensino Profissionalizante</h1>
-            <p>28/11 • 10:00 às 15:00</p>
-
-            <h2 class="hero-sub">Local</h2>
-            <h1>E.E. Conselheiro Crispiniano</h1>
-            <p>R. Arminda de Lima, 57 - Vila Progresso, Guarulhos - SP, 07095-010</p>
-            <a href="#sobre" class="btn">Saiba mais</a>
-            <a href="#sobre" class="btn">Ver Programação</a>
-        </div>
-
-    </header>
-
-
-    <div class="congresso-aprovado">
+  <main>
+    <section class="congresso-aprovado section">
+      <div class="container">
         <h2>UM CONGRESSO APROVADO POR QUEM MAIS IMPORTA: OS ESTUDANTES!</h2>
         <p>Esses resultados refletem a experiência dos participantes da 1ª edição do Congresso de Educação Profissional.
-            Um evento feito para inspirar, conectar e transformar o futuro da aprendizagem técnica.</p>
+          Um evento feito para inspirar, conectar e transformar o futuro da aprendizagem técnica.</p>
+
         <div class="resultados">
-            <div class="resultado">
-                <strong>96,8%</strong>
-                <p>Sentiram-se motivados a continuar os estudos</p>
-            </div>
-            <div class="resultado">
-                <strong>94,5%</strong>
-                <p>Avaliaram as apresentações como práticas e dinâmicas</p>
-            </div>
-            <div class="resultado">
-                <strong>92%</strong>
-                <p>Destaque na troca com colegas e professores</p>
-            </div>
-            <div class="resultado">
-                <strong>89,7%</strong>
-                <p>Disseram que voltariam na próxima edição</p>
-            </div>
+          <div class="resultado">
+            <strong>96,8%</strong>
+            <p>Sentiram-se motivados a continuar os estudos</p>
+          </div>
+          <div class="resultado">
+            <strong>94,5%</strong>
+            <p>Avaliaram as apresentações como práticas e dinâmicas</p>
+          </div>
+          <div class="resultado">
+            <strong>92%</strong>
+            <p>Destaque na troca com colegas e professores</p>
+          </div>
+          <div class="resultado">
+            <strong>89,7%</strong>
+            <p>Disseram que voltariam na próxima edição</p>
+          </div>
         </div>
-    </div>
+      </div>
+    </section>
 
-    <!-- SOBRE -->
+    <!-- SOBRE + PROGRAMAÇÃO -->
     <section id="sobre" class="section about">
-        <div class="container">
-            <h2>Sobre o ExpoEducatec</h2>
-            <p>O II Congresso do Ensino Profissionalizante é uma iniciativa da Unidade Regional de Ensino Guarulhos Sul,
-                com apoio da Secretaria de Educação do Estado de São Paulo, e tem como propósito valorizar o
-                protagonismo dos estudantes e a integração entre escola e comunidade.
+      <div class="container">
+        <h2>Sobre o ExpoEducatec</h2>
+        <p>O II Congresso do Ensino Profissionalizante é uma iniciativa da Unidade Regional de Ensino Guarulhos Sul,
+          com apoio da Secretaria de Educação do Estado de São Paulo, e tem como propósito valorizar o protagonismo dos
+          estudantes e a integração entre escola e comunidade.</p>
+      </div>
 
-                Esta é a segunda edição do evento, que pretende ocorrer anualmente, consolidando-se como um espaço de
-                referência para a apresentação de projetos inovadores e soluções práticas desenvolvidas pelos estudantes
-                dos cursos técnicos.
+      <div class="container programacao-evento">
+        <h2>Programação do Evento</h2>
 
-                Durante o congresso, 83 projetos serão apresentados, demonstrando a aplicação prática dos conhecimentos
-                adquiridos e o potencial de inovação presente nas escolas públicas.
+        <!-- GRADE TIPO PLANILHA -->
+        <div class="programacao-grid" role="table" aria-label="Programação do evento">
+          <div class="programacao-header" role="row">
+            <div role="columnheader">Horário</div>
+            <div role="columnheader">Atividade</div>
+          </div>
 
-                O evento também funciona como um espaço de networking, onde empresários, docentes universitários e
-                representantes da SEDUC podem conhecer de perto as soluções criativas dos estudantes e dialogar sobre o
-                futuro da educação profissional.</p>
+          <div class="programacao-row" role="row">
+            <div role="cell"><strong>10:00</strong></div>
+            <div role="cell">Abertura Oficial do Evento — Cerimônia de abertura com autoridades</div>
+          </div>
 
+          <div class="programacao-row" role="row">
+            <div role="cell"><strong>10:30</strong></div>
+            <div role="cell">Início das Apresentações — Estudantes começam a apresentar seus projetos</div>
+          </div>
+
+          <div class="programacao-row" role="row">
+            <div role="cell"><strong>12:00</strong></div>
+            <div role="cell">Intervalo — Pausa para almoço e networking</div>
+          </div>
+
+          <div class="programacao-row" role="row">
+            <div role="cell"><strong>13:00</strong></div>
+            <div role="cell">Continuação das Apresentações — Segunda rodada de apresentações</div>
+          </div>
+
+          <div class="programacao-row" role="row">
+            <div role="cell"><strong>14:00</strong></div>
+            <div role="cell">Palestra: Futuro da Educação Profissional — Palestrante convidado</div>
+          </div>
+
+          <div class="programacao-row" role="row">
+            <div role="cell"><strong>15:00</strong></div>
+            <div role="cell">Encerramento e Agradecimentos — Palestras finais e premiações</div>
+          </div>
+
+          <div class="programacao-row" role="row">
+            <div role="cell"><strong>16:00</strong></div>
+            <div role="cell">Encerramento do Evento — Fim oficial do Congresso</div>
+          </div>
         </div>
-        <div class="programacao-evento">
-            <h2>Programação do Evento</h2>
-            <ul>
-                <li><strong>10:00</strong> - Abertura Oficial do Evento<br>Cerimônia de abertura com autoridades</li>
-                <li><strong>10:30</strong> - Início das Apresentações<br>Estudantes começam a apresentar seus projetos
-                </li>
-                <li><strong>12:00</strong> - Intervalo<br>Pausa para almoço e networking</li>
-                <li><strong>13:00</strong> - Continuação das Apresentações<br>Segunda rodada de apresentações</li>
-                <li><strong>14:00</strong> - Palestra: Futuro da Educação Profissional<br>Palestrante convidado</li>
-                <li><strong>15:00</strong> - Encerramento e Agradecimentos<br>Palestras finais e premiações</li>
-                <li><strong>16:00</strong> - Encerramento do Evento<br>Fim oficial do Congresso</li>
-            </ul>
-        </div>
+      </div>
     </section>
 
     <!-- GALERIA -->
     <section id="galeria" class="section gallery">
-        <div class="container">
-            <h2>Galeria</h2>
-            <p>Minhas fotos — clique para ampliar.</p>
+      <div class="container">
+        <h2>Galeria</h2>
+        <p>Clique para ampliar.</p>
 
-            <div class="gallery-grid">
-                <!-- Repita os itens e troque os nomes dos arquivos -->
-                <div class="gallery-item">
-                    <img src="imagens/foto (1).jpg" alt="Foto 1" />
-                </div>
-                <div class="gallery-item">
-                    <img src="imagens/foto (2).jpg" alt="Foto 2" />
-                </div>
-                <div class="gallery-item">
-                    <img src="imagens/foto (3).jpg" alt="Foto 3" />
-                </div>
-                <div class="gallery-item">
-                    <img src="imagens/inicio.jpg" alt="Foto 4" />
-                </div>
-            </div>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="imagens/foto (1).jpg" alt="Foto 1" />
+          </div>
+          <div class="gallery-item">
+            <img src="imagens/foto (2).jpg" alt="Foto 2" />
+          </div>
+          <div class="gallery-item">
+            <img src="imagens/foto (3).jpg" alt="Foto 3" />
+          </div>
+          <div class="gallery-item">
+            <img src="imagens/inicio.jpg" alt="Foto 4" />
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- LIGHTBOX (oculto por padrão) -->
     <div id="lightbox" class="lightbox" aria-hidden="true">
-        <button class="lightbox-close" aria-label="Fechar">✕</button>
-        <img class="lightbox-img" src="" alt="Ampliação" />
+      <button class="lightbox-close" aria-label="Fechar">✕</button>
+      <img class="lightbox-img" src="" alt="Ampliação" />
     </div>
+  </main>
 
-    <!-- CONTATO / FOOTER -->
-    <footer id="contato" class="footer section">
-        <div class="container">
-            <h2>Conecte-se conosco</h2>
-            <div class="social-links">
-                <a href="#"><img src="imagens/icons8-instagram-100.png" alt="Instagram"></a>
-                <a href="#"><img src="imagens/icons8-x-100.png" alt="X"></a>
-                <a href="#"><img src="imagens/icons8-youtube-100.png" alt="YouTube"></a>
-                <a href="#"><img src="imagens/icons8-linkedin-100.png" alt="LinkedIn"></a>
-            </div>
-            <p class="copyright">© <span id="ano"></span> 2025 II Congresso do Ensino Profissionalizante – Unidade
-                Regional de Ensino Guarulhos Sul.<br>Apoio: Secretaria de Educação do Estado de São Paulo | E.E.
-                Conselheiro Crispiniano</p>
-        </div>
-    </footer>
+  <!-- CONTATO / FOOTER -->
+  <footer id="contato" class="footer section">
+    <div class="container">
+      <h2>Conecte-se conosco</h2>
+      <div class="social-links">
+        <a href="#"><img src="imagens/icons8-instagram-100.png" alt="Instagram"></a>
+        <a href="#"><img src="imagens/icons8-x-100.png" alt="X"></a>
+        <a href="#"><img src="imagens/icons8-youtube-100.png" alt="YouTube"></a>
+        <a href="#"><img src="imagens/icons8-linkedin-100.png" alt="LinkedIn"></a>
+      </div>
+      <p class="copyright">© <span id="ano"></span> 2025 II Congresso do Ensino Profissionalizante – Unidade
+        Regional de Ensino Guarulhos Sul.<br>Apoio: Secretaria de Educação do Estado de São Paulo | E.E.
+        Conselheiro Crispiniano</p>
+    </div>
+  </footer>
 
-    <script src="scripts.js"></script>
+  <script src="scripts.js"></script>
 </body>
 
 </html>
